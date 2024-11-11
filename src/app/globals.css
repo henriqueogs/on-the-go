@@ -1,14 +1,37 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --black: #000000;
+  --white: #FFFFFF;
+  --gray_500: #242528;
+  --purple: #C7B2FF;
+  --status_active: #0AD2A5;
+  --text-white: #FFFFFF;
+  --text_gray_secundary: #8A9099;
+  --font-public-sans: 'Public Sans', Arial, Helvetica, sans-serif;
+  --font-size-xxs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  /*12px*/
+  --font-size-sm: 0.875rem;
+  /*14px*/
+  --font-size-md: 1rem;
+  /*16px*/
+  --font-size-lg: 1.125rem;
+  /*180px*/
+  --font-size-xl: 1.25rem;
+  /*20px*/
+  --font-size-xxl: 1.875rem;
+  /*30px*/
+
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #FFFFFF;
+    --white: #FFFFFF;
   }
-}
+} */
 
 html,
 body {
@@ -19,7 +42,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-public-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,6 +51,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--font-public-sans);
+  /* Define a fonte padrão para todos os elementos */
 }
 
 a {
@@ -35,8 +60,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
